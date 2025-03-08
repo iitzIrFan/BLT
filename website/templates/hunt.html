@@ -4,6 +4,22 @@
 {% load custom_tags %}
 {% block content %}
     {% include "includes/sidenav.html" %}
+    <!-- Header Section -->
+    <div class="w-full bg-white shadow-sm border-b border-gray-200">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex items-center justify-between">
+                <div>
+                    <h1 class="text-3xl font-bold text-gray-900">{% trans "Bug Hunt" %}</h1>
+                    <p class="mt-1 text-gray-600">{% trans "Find and report security vulnerabilities" %}</p>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <span class="text-[#e74c3c]">
+                        <i class="fa fa-shield-alt text-2xl"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="{% static "js/jquery.validate.js" %}"></script>
     <!-- Add jQuery UI CSS and JS -->
     <link rel="stylesheet"
